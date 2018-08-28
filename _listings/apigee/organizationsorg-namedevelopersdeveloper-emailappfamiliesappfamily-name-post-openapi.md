@@ -290,6 +290,68 @@ paths:
       - Families
       - Applications
       - family
+    delete:
+      summary: Delete Organizations Name Developers Developer Email Appfamilies Appfamily
+        Name
+      description: Deletes an App Family and all Apps it contains.
+      operationId: deleteOrganizationsOrgNameDevelopersDeveloperEmailAppfamiliesAppfamilyName
+      x-api-path-slug: organizationsorg-namedevelopersdeveloper-emailappfamiliesappfamily-name-delete
+      parameters:
+      - in: path
+        name: appfamily_name
+        description: Mention app family name
+      - in: path
+        name: developer_email
+        description: Mention the developer email
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Developers
+      - Developer
+      - Email
+      - Applications
+      - Families
+      - Applications
+      - family
+  /organizations/{org_name}/developers/{developer_email}/appfamilies/{appfamily_name}/apps/{app_name}:
+    delete:
+      summary: Delete Organizations Name Developers Developer Email Appfamilies Appfamily
+        Name Apps App Name
+      description: Removes an App from an App Family.
+      operationId: deleteOrganizationsOrgNameDevelopersDeveloperEmailAppfamiliesAppfamilyNameAppsAppName
+      x-api-path-slug: organizationsorg-namedevelopersdeveloper-emailappfamiliesappfamily-nameappsapp-name-delete
+      parameters:
+      - in: path
+        name: appfamily_name
+        description: Mention app family name
+      - in: path
+        name: app_name
+        description: Mention app name
+      - in: path
+        name: developer_email
+        description: Mention the developer email
+      - in: path
+        name: org_name
+        description: Mention the organization name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Organizations
+      - Developers
+      - Developer
+      - Email
+      - Applications
+      - Families
+      - Applications
+      - family
+      - Applications
+      - ""
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
